@@ -26,7 +26,11 @@ describe('question list component', () => {
 
   })
 
-  it('should test 2', () => {
+  it.skip('should test 2', () => {
+
+  })
+
+  it('should test 3', () => {
 
   })
 
