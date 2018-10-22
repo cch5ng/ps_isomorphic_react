@@ -13,6 +13,7 @@ describe('fetch question saga', () => {
     const gen = handleFetchQuestion( { question_id: 42} )
     const { value } = await gen.next()
     expect(value).toEqual([{ question_id: 42}])
+    expect(fetch).toHaveBeenCalledWith(`/api/questions/42`)
 
   })
 
