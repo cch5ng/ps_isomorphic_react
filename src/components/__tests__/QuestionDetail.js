@@ -1,3 +1,5 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
 import { mapStateToProps, QuestionDetailDisplay } from '../QuestionDetail'
 
 describe('question detail component', () => {
@@ -22,17 +24,21 @@ describe('question detail component', () => {
     })
   })
 
+  describe('Display element', () => {
+    it('should not regress', () => {
+      //{title,body,answer_count,tags}
 
+      const tree = renderer.create(
+        <QuestionDetailDisplay 
+          title="haha!"
+          body="blah blah"
+          answer_count={3}
+          tags={['hey', 'you']}
+        />
+      )
+      expect(tree.toJSON()).toMatchSnapshot()
+    })
 
-
-
-
-
-
-
-
-  it('should not regress', () => {
-
-    
   })
+
 })

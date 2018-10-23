@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`question detail component Display element should not regress 1`] = `
+<div>
+  <h3
+    className="mb-2"
+  >
+    haha!
+  </h3>
+  <div>
+    <div
+      className="mb-3"
+    >
+      <div>
+        <code>
+          hey
+        </code>
+        <code>
+          you
+        </code>
+      </div>
+    </div>
+    <div>
+      <p>
+        blah blah
+      </p>
+    </div>
+    <div>
+      3
+       Answers
+    </div>
+  </div>
+</div>
+`;
