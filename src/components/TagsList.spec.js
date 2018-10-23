@@ -6,7 +6,7 @@ describe('TagsList component', () => {
 
   it('should render', () => {
     const tree = renderer
-      .create(<TagsList tags={[`css`, `html`, `go`]} />)
+      .create(<TagsList tags={[`css`, `html`, `swift`]} />)
       .toJSON();
 
     console.log('tree', tree);
